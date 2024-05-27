@@ -1,0 +1,42 @@
+td {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {       
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.h3-1 {
+    color: red;
+}
+
+#h4-1, li {
+    color: brown;
+}
+
+@font-face {
+    font-family: 'April16th-Promise';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/April16th-Promise.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'April16th-Promise';
+}
+

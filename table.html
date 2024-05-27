@@ -1,0 +1,74 @@
+<!DOCTYPE html> html
+<html>
+    <head>
+        <title>표 관련 태그</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/Fabicon_package/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/Fabicon_package/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>테이블 태그</h1>
+        <p>
+            <ul>
+                <li>표를 그릴때는 table 태그로 시작해서 table 태그로 끝난다.</li>
+                <li>tr 태그는 행을 의미한다.</li>
+                <li>td 태그는 행에 있는 열 하나를 의미한다.</li>
+                <li>th 태그는 열의 제목을 작성할때 사용한다.</li>
+            </ul>
+        </p>
+        <hr>
+        <table border="1" width="400">
+            <tr bgcolor="orange">
+                <th width="50">학번</th>
+                <th width="100">이름</th>
+                <th width="150">연락처</th>
+                <th width="100">주소</th>
+            </tr>
+            <tr align="center">
+                <td>1</td>
+                <td align="center" bgcolor="yellow">홍길동</td>
+                <td>010-1111-1111</td>
+                <td rowspan="2">전주시</td> <!--열을 합친다-->
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>김길자</td>
+                <td>010-2222-2222</td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td colspan="2">홍길자</td> <!--행을 합친다-->
+                <td>010-3333-3333</td>
+            </tr>
+        </table>
+        <table>
+            <hr>
+            <h1>이력서</h1>
+            <table border="1" width="50%">
+                <tr>
+                    <th width="20%">이름</th>
+                    <td width="30%">김형근</td>
+                    <th width="20%">연락처</th>
+                    <td width="30%">010-4488-3009</td>
+                </tr>
+                <tr>
+                    <th>영문이름</th>
+                    <td>Kim.sungkwang</td>
+                    <th>전자매일</th>
+                    <td>ksg6736@jbnu.ac.kr</td>
+                <tr>
+                    <th>주소</th>
+                    <td colspan="3">대전시 동구 신내로~~</td>
+                </tr>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </table>
+    </body>
+</html>

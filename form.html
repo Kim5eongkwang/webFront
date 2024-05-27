@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form tag</title>
+        <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <h1>폼 관련 태그</h1>
+        <p>
+            사용자로부터 입력을 받기 위해서 form 태그를 사용한다. <br>
+            input, textarea, select 등의 태그를 폼 요소라고 한다.
+        </p>
+        <hr>
+        <form name="f1" action="./register.php" method="get">
+            <fieldset>
+                <legend>회원인증</legend>
+            아이디 : <input type="text" autocomplete="off"><br>
+            비밀번호 : <input type="password"><br><br>
+            <input type="submit" value="전송하기"><input type="reset" value="초기화">
+            </fieldset>
+        </form>
+        <hr>
+        <form name="f2" action="./a.php" method="post">
+            <fieldset>
+                <legend>회원가입</legend>
+            <label>이름 : <input type="text" id="name" maxlength="10" size="50" autofocus required></label><br>
+            <label>아이디 : <input type="text" id="pid" maxlength="10" size="50" required></label> <br>
+            <label>비밀번호 : <input type="password" id="pwd" maxlength="10" size="50" placeholder required="숫자, 문자, 특수기호 포함해서 10글자 입력"></label><br>
+            <label>비밀번호 확인 : <input type="password" id="rpwd" maxlength="10" sizo="50" required></label><br>
+            <label>주소 : <input type="text" maxlength="50" id="address" size="50"></label><br>
+            <label>연락처 : <input type="tel" maxlength="13" id="tel" size="50"></label><br>
+            성별 : <label for="m1"> <input id="m1" type="radio" name="gender" value="male" checked> 남자 </label>
+                    <label for="f1"> <input id="f1" type="radio" name="gender" value="female">여자</label> <br>
+            취미 :  <label></label><input type="checkbox" name="hobby" value="sports" checked>운동</label>
+                    <label><input type="checkbox" name="hobby" value="reading">독서</label>
+                    <label><input type="checkbox" name="hobby" value="tour">여행</label>
+                    <label><input type="checkbox" name="hobby" value="music">음악듣기 </label><br>
+            <label>학교명 : <input type="text" name="uni" maxlength="10" size="50" value="전북대학교" readonly></label><br>
+            <label>학과명 : <select name="dept">
+                    <optgroup label="공과대학">
+                    <option value="computer">컴퓨터공학과</option>
+                    <option value="electronic">전자공학과</option>
+                    <option value="machine">기계공학과</option>
+                    <option value="inductry">산업공학과</option>
+                    <option value="architecture">건축공학과</option>
+                    </optgroup>
+                    <optgroup label="어문계열">
+                    <option value="eng" selected>영문학과</option>
+                    <option value="jap">일문학과</option>
+                    <option value="chi">중문학과</option>
+                    <option value="spa">스페인어학과</option>
+                    <option value="ger">독일어학과</option>
+                </optgroup>
+                </select> </label><br>
+                <label>메일주소 : <input type="email" name="mail" size="50" placeholder="형식에 맞게 입력주세요"></label><br>
+                <label>홈페이지 주소 : <input type="url" name="himepage" size="40" placeholder="http://를 포함해서 주소를 입력해주세요."></label><br>
+                <label>생년월일 : <input type="date" name="birthday"></label><br>
+                <label>좋아하는 색상 : <input type="color" name="color"></label><br>
+                <label>선택 수량 : <input type="number" min="3" max="10" name="num" step="2"></label> <br>
+                <label>좋아하는 수 : <input type="range" min="3" max="10" name="num" step="2"></label> <br>
+                <label>파일 첨부 : <input type="file" name="file"></label> <br>
+                <label>하고싶은 말 : </label> <br>
+            <textarea name="talk" id="t1" cols="60" rows="8"></textarea></label><br>
+            <input type="submit" value="회원가입"> <input type="reset" value="다시쓰기">
+
+            </fieldset>
+        </form>
+    
+</body>
+</html>
