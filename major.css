@@ -1,0 +1,87 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+header {
+    width: 90%;
+    border: 1px solid gray;
+    background-color: beige;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+header h1 {
+    width: 20%;
+    float: left;
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav {
+    width: 60%;
+    font-size: 1.5em;
+    float: right;
+    margin: 20px 0;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    background-image: url(./image/bubbledia.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article {
+    width: 95%;
+    height: 250px;
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+article:hover {
+    opacity: 1;
+    background-color: pink;
+}
+
+article h3 {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px orange;
+    margin: 0;
+}
+
+footer {
+    width: 90%;
+    border: 1px solid gray;
+    height: 100px;
+    background-color: black;
+    color: white;
+    line-height: 100px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
