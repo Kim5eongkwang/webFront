@@ -1,36 +1,63 @@
-<!DOCTYPE html> <!-- DOCTYPE 으로 시작해야함-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>
-            Homepage
-        </title>
-        <meta charset="utf-8"> <!-- 한글을 깨지지 않게 하기 위함 유니코드 인코딩 -->
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">  <!-- 메타데이터는 검색사이트의 크롤링을 위함 -->
+        <meta charset="utf-8">
+        <meta name="impot" content="width=device-width, initial-scale-1.0">
+        <title>성광 홈페이지</title>
         <style>
-            body { background-color: beige;}
+            #content{
+                position: absolute;
+                left: 5%;
+                top: 10px;
+                background-color: rgba(250, 235, 215, 0.5) ;
+                padding: 30px 50px;
+                border-radius: 20px;
+            }
         </style>
-        <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/Fabicon_package/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/Fabicon_package/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="a.css"> 
+        <link rel="stylesheet" href="vegas/vegas.css">
+        <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js" crossorigin="anonymous"></script>
+        
     </head>
-    <!-- 페이지에서 보이는 부분 BODY-->
     <body>
-        <h1>환영합니다. </h1>
-        <p>
-            웹프로그래밍 수업은 홈페이지 제작을 위한 언어를 배우는 과목입니다.<br><br>
-            홈페이지 제작을 위한 표준 언어로는 HTML5, CSS3, JavaScript 가 있구요...<br>
-            HTML5는 HyperText Markup Language의 약자로서 컨텐츠 입력, 전체 뼈대작업
-            (레이아웃)을 합니다.<br><br>
-            CSS3는 Cascade Style Sheet의 약자로 HTML 언어로 입력한 문서의 스타일을
-            입히는 언어입니다. 즉 시각적인, 디자인을 담당하는 언어입니다.<br><br>
-            JavaScript는 사용자로부터 이벤트를 받아서 처리하기 위한 언어입니다.<br><br>
+        <div id="content">
+            <h1>5ungkwang's Landing Page</h1>
+            <p>VEGAS2를 이용한 풀스크린 랜딩페이지</p>
+            <a href="./resume.html"><i class="fa-solid fa-clipboard-user"></i> RESUME</a> /
+            <a href="./story.html"><i class="fa-solid fa-book"></i> Story</a> /
+            <a href="./album.html"><i class="fa-solid fa-image"></i> ALBUM</a> /
+            <a href="./major.html"><i class="fa-solid fa-computer"></i> Major</a> /
+            <a href="./poster.html"><i class="fa-solid fa-broom-ball"></i> POSTER</a> /
+            <a href="./buckit.html"><i class="fa-solid fa-list-check"></i> buckit List</a> /
+            <a href="http://www.jbnu.ac.kr" target="_blank">JBNU</a>
+            <ul>
+                <li>Home : 메인 페이지입니다.</li>
+                <li>RESUME : 나의 이력서를 보실 수 있습니다.</li>
+                <li>STORY : 삼행시부터 숫자 키워드를 통한 나의 소개, 취미 그리고 롤모델까지~</li>
+                <li>ALBUM : 일상생활에서의 나의모습은 이렇습니다.</li>
+                <li>POSTER : 이미지맵으로 표현한 나의 홈페이지</li>
+                <li>BUCKIT LIST : 죽기전에 꼭 하고싶은 10가지</li>
+                <li>JBNU : 학교 사이트로 이동합니다.</li>
+            </ul>
+        </div>
 
-            HTML 문서로 작성된 파일은 "파일이름.html" 또는 "파일이름.htm" 으로
-            저장합니다.
-        </p>
+        <script>
+            $(function() {
+                $('body').vegas({
+                    slides: [
+                        { src: './image/buckit/buckit1.jpg' },
+                        { src: './image/buckit/buckit2.jpg' },
+                        { src: './image/buckit/buckit3.jpg' },
+                        { src: './image/buckit/buckit4.jpg' }
+                    ],
+                    delay: 8500,
+                    transition: 'zoomOut',
+                    animation: 'kenburns'
+                });
+            });
+
+        </script>
     </body>
 </html>

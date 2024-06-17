@@ -4,20 +4,71 @@
         <title>나의 홈페이지</title>
         <style>
             @font-face {
-            font-family: 'WAGURITTF';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
+                font-family: 'WAGURITTF';
+                src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
             }
 
-            h1{
+            body {
+                background-color: whitesmoke;
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+
+            h1 {
                 font-family: 'WAGURITTF';
-                text-shadow: 5px 5px 10px purple;
+                text-shadow: 5px 5px 10px red;
+                color: red;
+            }
+
+            table {
+                width: 95%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            table, th, td {
+                border: 0px solid #333;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .header {
+                /* background-color: #000; */
+                color: #fff;
+            }
+
+            .header a {
+                color: black;
+                text-shadow: 1px 1px 2px gray;
+                text-decoration: underline;
+            }
+
+            .header a:hover {
+                color: red;
+            }
+
+            .section-title {
+                background-color: #222;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
             }
 
             li {
                 color: red;
                 font-size: 20px;
+                margin: 5px 0;
             }
 
             .aaa {
@@ -30,13 +81,13 @@
 
             span {
                 color: red;
-                background-color: aqua;
+                background-color: gray;
                 font-size: 1.5em;
             }
 
             a {
-                color: blue;
-                text-shadow: 1px 1px 2px aqua;
+                color: black;
+                text-shadow: 1px 1px 2px gray;
                 text-decoration: underline;
             }
 
@@ -47,76 +98,68 @@
 
             h3 {
                 text-decoration: underline wavy black;
-                text-shadow: 2px, 2px, 10px, pink;
+                text-shadow: 2px 2px 10px pink;
             }
 
-            div.pic{
-                width:100px;
-                height:100px;
-                border:1px solid black;
+            div.pic, div.song {
+                border: 1px solid black;
                 background-size: cover;
-                background-repeat: none;
+                background-repeat: no-repeat;
                 opacity: 50%;
+                transition: opacity 0.3s;
             }
 
-            div.pic:hover {
+            div.pic:hover, div.song:hover {
                 opacity: 100%;
             }
 
-            .pic1 {
-                background-image: url(./image/logo.png);
-            }
-            .pic2 {
-                background-image: url(./image/logo.png);
-            }
-            .pic3 {
-                background-image: url(./image/logo.png);
+            div.pic {
+                width: 100px;
+                height: 100px;
             }
 
             div.song {
-                width : 150px;
-                height : 150px;
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
-                border: 1px solid black;
-                background-size: cover;
-                background-repeat: none;
                 display: inline-block;
-                opacity: 50%;
             }
 
-            div.song:hover {
-                opacity:100%;
+            .pic1, .pic2, .pic3 {
+                background-image: url(./image/logo.png);
             }
-            
+
             .pic4 {
                 background-image: url(./image/jyh.jpg);
             }
+
             .pic5 {
                 background-image: url(./image/gangnam.jpg);
             }
+
             .pic6 {
                 background-image: url(./image/bubbledia.jpeg);
             }
 
             div {
-                border:1px solid;
-                border-color: black;
+                border: 1px solid;
+                /* border-color: black; */
                 border-radius: 10px;
                 width: 90%;
                 background-color: beige;
                 text-align: left;
                 box-shadow: 5px 5px 5px gray;
+                margin: 10px 0;
+                padding: 10px;
             }
 
             .back {
                 background-image: url('./image/sec3_digimon8.png');
                 background-repeat: no-repeat;
-                background-position: right bottom;
                 background-position: right 30px bottom 20px;
                 background-size: 30%;
                 background-attachment: scroll;
             }
-
 
         </style>
         <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
@@ -131,14 +174,14 @@
     </head>
     <body>
         <center>
-            <table border="1" width="95%">
-                <tr align="center">
+            <table>
+                <tr class="header">
                     <td rowspan="2">
                         <img src="./image/logo.png" alt="김성광 로고" width="30%">
                     </td>
-                    <td colspan="2"><h1>Welcome to My Homepage ^.^</h1></td>
+                    <td colspan="2"><h1>C O N F I D E N T I A L</h1></td>
                 </tr>
-                <tr align="center">
+                <tr class="header">
                     <td colspan="2">
                         <a href="./resume.html"><i class="fa-solid fa-clipboard-user"></i> RESUME</a> /
                         <a href="./story.html"><i class="fa-solid fa-book"></i> Story</a> /
@@ -146,52 +189,49 @@
                         <a href="./major.html"><i class="fa-solid fa-computer"></i> Major</a> /
                         <a href="./poster.html"><i class="fa-solid fa-broom-ball"></i> POSTER</a> /
                         <a href="./buckit.html"><i class="fa-solid fa-list-check"></i> buckit List</a> /
-                        <a href="http://www.jbnu.ac.kr" target="_blank">JBNU</a> <!-- target-"_blank"는 새로운 탭으로 사이트를 열때 필요함-->
+                        <a href="http://www.jbnu.ac.kr" target="_blank">JBNU</a>
                     </td>
                 </tr>
-                <tr height="600" align="center">
+                <tr height="600">
                     <td width="20%">
-                        <img src="./image/picture/skpic.jpg" alt="성광 사진"><br>
+                        <img src="./image/picture/skpic.jpg" alt="성광 사진" width="100%"><br>
                         Kim. Seoungkwang <br>
                         010-8012-2282 <br><br>
                         <a href="https://github.com/Kim5ungkwang" target="_blank"><i class="fa-brands fa-github"></i></a> <br><br>
-                    <div class="pic pic1">사진1</div>
-                    <div class="pic pic2">사진2</div>
-                    <div class="pic pic3">사진3</div>
-                    세로형태의 사진</td>
-                <td width="40%" valign="TOP" >
-                    <h3 class="h3-1">나는 이런 사람이에요</h3>
-                    <div>
-                        <ul>
-                            <li>Name : <font size="30"> Kim. Seoungkwang </font> </li>
-                            <li id="bbb" class="aaa">Uni : Jeonbuk National University</li>
-                            <li>Dept : Kim. Computer Engineering</li>
-                            <li>MBTI : INTJ</li>
-                            <li class="text1">Hobby : 농구, 연구실 가기</li>
-                            <li>Color : RED</li>
-                            <li>생활 신조 : 유아독존</li>
-                            <li>내가 가장 듣기 좋아하는 말 : 칭찬</li>
-                            <li>나의 키워드 : #흐르는 물</li>
-                        </ul>
-                    </div>
-                    <br><br>
-                    <h3>나를 대표하는 나의 아이덴티티</h3>
-                    <h4 id="h4-1">캐리커처</h4>
+                        세로형태의 사진
+                    </td>
+                    <td width="40%" valign="top">
+                        <h3 class="section-title">나는 이런 사람이에요</h3>
+                        <div>
+                            <ul>
+                                <li>Name : <font size="30"> Kim. Seoungkwang </font> </li>
+                                <li id="bbb" class="aaa">Uni : Jeonbuk National University</li>
+                                <li>Dept : Kim. Computer Engineering</li>
+                                <li>MBTI : INTJ</li>
+                                <li class="text1">Hobby : 농구, 연구실 가기</li>
+                                <li>Color : RED</li>
+                                <li>생활 신조 : 유아독존</li>
+                                <li>내가 가장 듣기 좋아하는 말 : 칭찬</li>
+                                <li>나의 키워드 : #흐르는 물</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <h3 class="section-title">나를 대표하는 나의 아이덴티티</h3>
+                        <h4 id="h4-1">캐리커처</h4>
                         <img src="./image/caricature.png" alt="캐리커처" width="90%">
-                    <br>
-                    <h4>나의 로고</h4>
+                        <br>
+                        <h4>나의 로고</h4>
                         <img src="./image/logo.png" alt="20%">
-
-                    <h3 class="h3-1">나의 인생 장소</h3>
-                    <p>선정장소 : 인제군 서화리 <br>
-                        선정이유 : 아름다운 자연경관 속 나의 군복무가 이루어졌다. 정말 힘든 곳, 기름냄세 많음, 20대 초반을 갈아넣은곳.
-                    </p>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100218.09742068936!2d128.12202721966943!3d38.28376848427296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fd885f639b9acb7%3A0xbcc954735ead2de8!2z6rCV7JuQ64-EIOyduOygnOq1sCDshJztmZTrqbQ!5e0!3m2!1sko!2skr!4v1715061604009!5m2!1sko!2skr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </td>
-
-                    <td width="40%" class="back">내가 좋아하는 노래
+                        <h3 class="section-title">나의 인생 장소</h3>
+                        <p>선정장소 : 인제군 서화리 <br>
+                            선정이유 : 아름다운 자연경관 속 나의 군복무가 이루어졌다. 정말 힘든 곳, 기름냄세 많음, 20대 초반을 갈아넣은곳.
+                        </p>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100218.09742068936!2d128.12202721966943!3d38.28376848427296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fd885f639b9acb7%3A0xbcc954735ead2de8!2z6rCV7JuQ64-EIOyduOygnOq1sCDshJztmZTrqbQ!5e0!3m2!1sko!2skr!4v1715061604009!5m2!1sko!2skr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </td>
+                    <td width="40%" class="back">
+                        내가 좋아하는 노래
                         <p>
                             그래 그리 쉽지는 않겠지 <br>
                             나를 허락해준 세상이란 <br>
@@ -253,15 +293,15 @@
                             조금만 기다려봐 Oh my love <br>
                             </span>
                         </p>
-                </td>
-            </tr>
-            <tr align="center" height="100" bgcolor="gray">
-                <td colspan="3">이 홈페이지는 나의 소개를 위해 만들어졌습니다. <br>
-                    누가 만들었을까요?
-                    <a href="mailto:ksg6736@jbnu.ac.kr">ksg6736@jbnu.ac.kr</a> 
-                </td>
-            </tr>
-        </table>
+                    </td>
+                </tr>
+                <tr align="center" height="100" bgcolor="gray">
+                    <td colspan="3">이 홈페이지는 나의 소개를 위해 만들어졌습니다. <br>
+                        누가 만들었을까요?
+                        <a href="mailto:ksg6736@jbnu.ac.kr">ksg6736@jbnu.ac.kr</a> 
+                    </td>
+                </tr>
+            </table>
         </center>
     </body>
 </html>
