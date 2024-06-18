@@ -1,307 +1,126 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>나의 홈페이지</title>
-        <style>
-            @font-face {
-                font-family: 'WAGURITTF';
-                src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            body {
-                background-color: whitesmoke;
-                font-family: Arial, sans-serif;
-                color: #333;
-            }
-
-            h1 {
-                font-family: 'WAGURITTF';
-                text-shadow: 5px 5px 10px red;
-                color: red;
-            }
-
-            table {
-                width: 95%;
-                border-collapse: collapse;
-                margin: 20px 0;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            }
-
-            table, th, td {
-                border: 0px solid #333;
-            }
-
-            th, td {
-                padding: 10px;
-                text-align: center;
-            }
-
-            .header {
-                /* background-color: #000; */
-                color: #fff;
-            }
-
-            .header a {
-                color: black;
-                text-shadow: 1px 1px 2px gray;
-                text-decoration: underline;
-            }
-
-            .header a:hover {
-                color: red;
-            }
-
-            .section-title {
-                background-color: #222;
-                color: #fff;
-                padding: 5px;
-                border-radius: 5px;
-            }
-
-            ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            li {
-                color: red;
-                font-size: 20px;
-                margin: 5px 0;
-            }
-
-            .aaa {
-                color: blue;
-            }
-            
-            #bbb {
-                color: purple;
-            }
-
-            span {
-                color: red;
-                background-color: gray;
-                font-size: 1.5em;
-            }
-
-            a {
-                color: black;
-                text-shadow: 1px 1px 2px gray;
-                text-decoration: underline;
-            }
-
-            .text1 {
-                font-weight: bold;
-                font-style: italic;
-            }
-
-            h3 {
-                text-decoration: underline wavy black;
-                text-shadow: 2px 2px 10px pink;
-            }
-
-            div.pic, div.song {
-                border: 1px solid black;
-                background-size: cover;
-                background-repeat: no-repeat;
-                opacity: 50%;
-                transition: opacity 0.3s;
-            }
-
-            div.pic:hover, div.song:hover {
-                opacity: 100%;
-            }
-
-            div.pic {
-                width: 100px;
-                height: 100px;
-            }
-
-            div.song {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                display: inline-block;
-            }
-
-            .pic1, .pic2, .pic3 {
-                background-image: url(./image/logo.png);
-            }
-
-            .pic4 {
-                background-image: url(./image/jyh.jpg);
-            }
-
-            .pic5 {
-                background-image: url(./image/gangnam.jpg);
-            }
-
-            .pic6 {
-                background-image: url(./image/bubbledia.jpeg);
-            }
-
-            div {
-                border: 1px solid;
-                /* border-color: black; */
-                border-radius: 10px;
-                width: 90%;
-                background-color: beige;
-                text-align: left;
-                box-shadow: 5px 5px 5px gray;
-                margin: 10px 0;
-                padding: 10px;
-            }
-
-            .back {
-                background-image: url('./image/sec3_digimon8.png');
-                background-repeat: no-repeat;
-                background-position: right 30px bottom 20px;
-                background-size: 30%;
-                background-attachment: scroll;
-            }
-
-        </style>
-        <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/Fabicon_package/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/Fabicon_package/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="./a.css">
-        <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <center>
-            <table>
-                <tr class="header">
-                    <td rowspan="2">
-                        <img src="./image/logo.png" alt="김성광 로고" width="30%">
-                    </td>
-                    <td colspan="2"><h1>C O N F I D E N T I A L</h1></td>
-                </tr>
-                <tr class="header">
-                    <td colspan="2">
-                        <a href="./resume.html"><i class="fa-solid fa-clipboard-user"></i> RESUME</a> /
-                        <a href="./story.html"><i class="fa-solid fa-book"></i> Story</a> /
-                        <a href="./album.html"><i class="fa-solid fa-image"></i> ALBUM</a> /
-                        <a href="./major.html"><i class="fa-solid fa-computer"></i> Major</a> /
-                        <a href="./poster.html"><i class="fa-solid fa-broom-ball"></i> POSTER</a> /
-                        <a href="./buckit.html"><i class="fa-solid fa-list-check"></i> buckit List</a> /
-                        <a href="http://www.jbnu.ac.kr" target="_blank">JBNU</a>
-                    </td>
-                </tr>
-                <tr height="600">
-                    <td width="20%">
-                        <img src="./image/picture/skpic.jpg" alt="성광 사진" width="100%"><br>
-                        Kim. Seoungkwang <br>
-                        010-8012-2282 <br><br>
-                        <a href="https://github.com/Kim5ungkwang" target="_blank"><i class="fa-brands fa-github"></i></a> <br><br>
-                        세로형태의 사진
-                    </td>
-                    <td width="40%" valign="top">
-                        <h3 class="section-title">나는 이런 사람이에요</h3>
-                        <div>
-                            <ul>
-                                <li>Name : <font size="30"> Kim. Seoungkwang </font> </li>
-                                <li id="bbb" class="aaa">Uni : Jeonbuk National University</li>
-                                <li>Dept : Kim. Computer Engineering</li>
-                                <li>MBTI : INTJ</li>
-                                <li class="text1">Hobby : 농구, 연구실 가기</li>
-                                <li>Color : RED</li>
-                                <li>생활 신조 : 유아독존</li>
-                                <li>내가 가장 듣기 좋아하는 말 : 칭찬</li>
-                                <li>나의 키워드 : #흐르는 물</li>
-                            </ul>
-                        </div>
-                        <br><br>
-                        <h3 class="section-title">나를 대표하는 나의 아이덴티티</h3>
-                        <h4 id="h4-1">캐리커처</h4>
-                        <img src="./image/caricature.png" alt="캐리커처" width="90%">
-                        <br>
-                        <h4>나의 로고</h4>
-                        <img src="./image/logo.png" alt="20%">
-                        <h3 class="section-title">나의 인생 장소</h3>
-                        <p>선정장소 : 인제군 서화리 <br>
-                            선정이유 : 아름다운 자연경관 속 나의 군복무가 이루어졌다. 정말 힘든 곳, 기름냄세 많음, 20대 초반을 갈아넣은곳.
-                        </p>
-                        <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100218.09742068936!2d128.12202721966943!3d38.28376848427296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fd885f639b9acb7%3A0xbcc954735ead2de8!2z6rCV7JuQ64-EIOyduOygnOq1sCDshJztmZTrqbQ!5e0!3m2!1sko!2skr!4v1715061604009!5m2!1sko!2skr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </td>
-                    <td width="40%" class="back">
-                        내가 좋아하는 노래
-                        <p>
-                            그래 그리 쉽지는 않겠지 <br>
-                            나를 허락해준 세상이란 <br>
-                            손쉽게 다가오는 <br>
-                            편하고도 감미로운 공간이 아냐 <br>
-                            그래도 날아오를 거야 <br>
-                            작은 날갯짓에 꿈을 담아 <br>
-                            조금만 기다려봐 oh my love
-                            나비처럼 날아가 볼까 일렁거리는 바람에 실려 <br>
-                            이런 느낌을 언제나 느낄 수 있을까 <br>
-                            마음속을 좁혀오는 사소한 일은 신경 쓰지 마 <br>
-                            지금 이대로 날아가 모두 잊으면 돼 <br>
-                            어떻게 wow wow wow wow wow <br>
-                            하늘 끝까지 닿을 수 있을까 <br>
-                            이렇게 wow wow wow wow wow <br>
-                            여린 날개가 힘을 낼 수 있을까 <br>
-                            그래 그리 쉽지는 않겠지 <br>    
-                            나를 허락해준 세상이란 <br>
-                            손쉽게 다가오는 편하고도 감미로운 공간이 아냐 <br>
-                            그래도 날아오를 거야 <br>
-                            작은 날갯짓에 꿈을 담아 <br>
-                            조금만 기다려봐 oh my love <br>
-                            나비처럼 날아가볼까 변덕 부리는 바람을 넘어 <br>
-                            이런 느낌을 네게도 전할 수 있을까 <br>
-                            마음 깊이 잠가 놓은 잊혀진 꿈에 슬퍼하지 마 <br>
-                            지금 이대로 날아가 끝까지 가면 돼 <br>
-                            <span id="hu">
-                            어떻게 wow wow wow wow wow <br>
-                            비바람 속을 견딜 수 있을까 <br>
-                            이렇게 wow wow wow wow wow <br>
-                            젖은 날개를 다시 펼 수 있을까 <br> 
-                            </span>
-                            <br><br>
-                            <img src="image/butterfly.png" alt="나비 이미지" width="20%"> <br>
-                            영상보기 : <a href="https://www.youtube.com/watch?v=5BONQ39cP9k&pp=ygUT65SU7KeA66qsIGJ1dHRlcmZseQ%3D%3D">전영호</a> | 
-                            <a href="https://www.youtube.com/watch?v=rusGjAs0ius&pp=ygUT65SU7KeA66qsIGJ1dHRlcmZseQ%3D%3D">강남<a> |
-                            <a href="https://www.youtube.com/watch?v=JzvWDfEqQ5o&pp=ygUT65SU7KeA66qsIGJ1dHRlcmZseQ%3D%3D">버블디아</a>
-                            <div class="song pic4"></div>
-                            <div class="song pic5"></div>
-                            <div class="song pic6"></div><br>
-                            그래 그리 쉽지는 않겠지 <br>
-                            내가 허락받은 시간이란 <br>
-                            오래전 기대만큼 평화롭고 희망찬 시대가 아냐 <br>
-                            그래도 날아오를 거야 <br>
-                            작은 날개 끝에 힘을 더해 <br>
-                            조금만 기다려봐 Oh my love <br>
-                            그래 그리 쉽지는 않겠지 <br> 
-                            나를 허락해준 세상이란 <br>
-                            손쉽게 다가오는 편하고도 감미로운 공간이 아냐 <br>
-                            그래도 날아오를 거야 <br>
-                            작은 날갯짓에 꿈을 담아 <br>
-                            조금만 기다려봐 Oh Yeah <br>
-                            <span style="color: blue;">
-                            그래 그리 쉽지는 않겠지 <br>
-                            내가 허락받은 시간이란 <br>
-                            오래전 기대만큼 평화롭고 희망찬 시대가 아냐 <br>
-                            그래도 날아오를 거야 <br>
-                            작은 날개 끝에 힘을 더해 <br>
-                            조금만 기다려봐 Oh my love <br>
-                            </span>
-                        </p>
-                    </td>
-                </tr>
-                <tr align="center" height="100" bgcolor="gray">
-                    <td colspan="3">이 홈페이지는 나의 소개를 위해 만들어졌습니다. <br>
-                        누가 만들었을까요?
-                        <a href="mailto:ksg6736@jbnu.ac.kr">ksg6736@jbnu.ac.kr</a> 
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="light-gray text-gray sidebar center">
+        <br>
+        <div>
+            <image class="circular" src="../image/logo.png" alt="Profile" width="200px"></image>
+        </div>
+        <h3 class="margin-0" style="padding-top: 20px ; color:black">
+            <b>
+                Kim. Seoungkwang
+            </b>
+        </h3>
+        <p class="caps margin-0" style="padding-bottom: 20px">
+            student of Jeonbuk National University
+        </p>
+            <a href="main.html" class="bar-block button caps active">Main</a>
+            <a href="resume.html" class="bar-block button caps">Resume</a>
+            <a href="story.html" class="bar-block button caps">Story</a>
+            <a href="major.html" class="bar-block button caps">Major</a>
+            <a href="album.html" class="bar-block button caps">Album</a>
+            <a href="bucket.html" class="bar-block button caps">Bucket</a>
+            <a href="#" class="bar-block button caps">JBNU</a>
+    </nav>
+    <div class="main" style="margin-left: 400px">
+        <div class="imgbackground">
+            <div class="maintitle text-white caps">
+                <h2>Welcome to my</h2>
+                <h2 style="letter-spacing:5px">homepage</h4>
+            </div>
+        </div>
+        <div class="aboutme center dark-gray text-white">
+            <div class="left margin-right">
+                <span class="highlight">
+                    [My profile]
+                </span>
+                <ul>
+                    <li><strong>(1) Name: </strong>Kim. Seoungkwang</li>
+                    <p></p>
+                    <li><strong>(2) Univeristy: </strong>Jeonbuk National Univ.</li>
+                    <p></p>
+                    <li><strong>(3) Department: </strong>Computer Engineering</li>
+                    <p></p>
+                    <li><strong>(4) MBTI: </strong>INTJ</li>
+                    <p></p>
+                    <li><strong>(5) Hobby: </strong>BasketBall, Lab</li>
+                    <p></p>
+                    <li><strong>(6) Color: </strong>Red</li>
+                    <p></p>
+                    <li><strong>(7) 생활 신조: </strong>유아독존</li>
+                    <p></p>
+                    <li><strong>(8) Favorite Word: </strong>Compliments !</li>
+                    <p></p>
+                    <li><strong>(9) KeyWord: </strong><u>#흐르는 물</u></li>
+                </ul>
+            </div>
+            <div class="right">
+                <span class="highlight">
+                    [좋아하는 노래]
+                </span>
+                <p>
+                    그래 그리 쉽지는 않겠지 <br>
+                    나를 허락해준 세상이란 <br>
+                    손쉽게 다가오는 <br>
+                    편하고도 감미로운 공간이 아냐 <br>
+                    그래도 날아오를 거야 <br>
+                    작은 날갯짓에 꿈을 담아 <br>
+                    조금만 기다려봐 oh my love
+                    나비처럼 날아가 볼까 일렁거리는 바람에 실려 <br>
+                    이런 느낌을 언제나 느낄 수 있을까 <br>
+                    마음속을 좁혀오는 사소한 일은 신경 쓰지 마 <br>
+                    지금 이대로 날아가 모두 잊으면 돼 <br>
+                    어떻게 wow wow wow wow wow <br>
+                    하늘 끝까지 닿을 수 있을까 <br>
+                    이렇게 wow wow wow wow wow <br>
+                    여린 날개가 힘을 낼 수 있을까 <br>
+                    그래 그리 쉽지는 않겠지 <br>    
+                    나를 허락해준 세상이란 <br>
+                    손쉽게 다가오는 편하고도 감미로운 공간이 아냐 <br>
+                    그래도 날아오를 거야 <br>
+                    작은 날갯짓에 꿈을 담아 <br>
+                    조금만 기다려봐 oh my love <br>
+                    나비처럼 날아가볼까 변덕 부리는 바람을 넘어 <br>
+                    이런 느낌을 네게도 전할 수 있을까 <br>
+                    마음 깊이 잠가 놓은 잊혀진 꿈에 슬퍼하지 마 <br>
+                    지금 이대로 날아가 끝까지 가면 돼 <br>
+                    어떻게 wow wow wow wow wow <br>
+                    비바람 속을 견딜 수 있을까 <br>
+                    이렇게 wow wow wow wow wow <br>
+                    젖은 날개를 다시 펼 수 있을까 <br> 
+                    그래 그리 쉽지는 않겠지 <br>
+                    내가 허락받은 시간이란 <br>
+                    오래전 기대만큼 평화롭고 희망찬 시대가 아냐 <br>
+                    그래도 날아오를 거야 <br>
+                    작은 날개 끝에 힘을 더해 <br>
+                    조금만 기다려봐 Oh my love <br>
+                    그래 그리 쉽지는 않겠지 <br> 
+                    나를 허락해준 세상이란 <br>
+                    손쉽게 다가오는 편하고도 감미로운 공간이 아냐 <br>
+                    그래도 날아오를 거야 <br>
+                    작은 날갯짓에 꿈을 담아 <br>
+                    조금만 기다려봐 Oh Yeah <br>
+                    그래 그리 쉽지는 않겠지 <br>
+                    내가 허락받은 시간이란 <br>
+                    오래전 기대만큼 평화롭고 희망찬 시대가 아냐 <br>
+                    그래도 날아오를 거야 <br>
+                    작은 날개 끝에 힘을 더해 <br>
+                    조금만 기다려봐 Oh my love <br>
+                </p>
+            </div>
+        </div>
+        
+        <div id="contact" class="black center text-white">
+            <p style="margin-top:0">Phone: 010-8317-275</p>
+            <p style="margin-bottom:0">Email: haneulpark7275@gmail.com</p>
+        </div>
+    </div>
+</body>
 </html>
