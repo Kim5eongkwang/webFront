@@ -4,7 +4,8 @@ div.card {
     display:inline-block;
     border: 1px solid gray;
     width: 300px;
-    padding: 10px 10px 20px 20px;      /* 여백 */
+     padding: 10px 30px 10px 10px;      /* 여백 */
+
     text-align: left;   /* 글자 좌측정렬 */
     border-radius: 10px;    /* 박스 모서리 둥글게 */
     margin: 20px;       /* 여백 */
