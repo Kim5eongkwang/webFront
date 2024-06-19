@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5 {
+    font-family: 'NanumSquareRound';
+    font-weight: 700;
+}
+
+html, body {
+    font-family: 'NanumSquareRound';
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+}
+
+.maintitle {
+    padding-top: 300px;
+}
+
+.maintitle h2{
+    margin: 0;
+}
+
+.maintitle h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgray;
+}
+
+div{
+    display: block;
+}
+
+h2{
+    font-size : 100px;
+    font-weight : bold;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-right {
+    margin-right: 20px !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+.bar-block {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 5px 0;
+}
+
+.button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
+    background-color: #d5d5d5;
+    color: black;
+}
+
+.button:hover {
+    background-color: #d5d5d5;
+    color: black;
+}
+
+.text-gray {
+    color: #757575;
+}
+
+.text-white {
+    color: white;
+}
+
+.light-gray {
+    background-color: #f1f1f1;
+}
+
+.dark-gray {
+    background-color: #686767;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.imgbackground {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../image/img_parallax.jpg);;
+    background-size: cover;
+    padding-left: 40px;
+    height: 100vh;
+}
+
+.center {
+    align-items: center;
+}
+.aboutme {
+    padding: 40px;
+    display: flex;
+}
+
+.viewport {
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 3px;
+    color: black;
+    font-weight: 600;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+.viewport:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.justify {
+    text-align: justify!important;
+}
+
+.content {
+    margin: 0 350px 0 350px;
+}
+
+.left{
+    width: 50%;
+    border-right: 1px solid whitesmoke;
+}
+.right{
+    width: 50%;
+}
+
+.highlight{
+    font-size:20px;
+    display: inline;
+    box-shadow: inset 0 -18px 0 #202020; 
+}
+
+strong{
+    font-weight:900;
+    font-size:17px;
+    color: rgb(135, 199, 255);
+}
+
+u{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+i {
+    font-size: 25px;
+    color: white;
+}
+
+a{
+    color: whitesmoke
+}
