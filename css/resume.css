@@ -1,12 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    /*
-    background-image: url(../image/picture/profile.png);
-    background-repeat: no-repeat;
-    background-size: 200px 250px;
-    background-position: right bottom;
-    background-attachment: fixed;
-    */
 }
 .profile {
     position: fixed;
@@ -38,7 +31,7 @@ td {
 }
 
 .resume-1 {
-    padding: 100px;
+    padding: 10px;
 }
 
 .resume-1 ul{

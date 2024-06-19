@@ -27,6 +27,15 @@ nav a {
     margin-left: 50px;
 }
 
+#shortcut a {
+    position: relative;
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
 nav a::before {
     content: '';
     position: absolute;
