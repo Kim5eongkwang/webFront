@@ -1,0 +1,58 @@
+.bucketcontents table, 
+.bucketcontents tr, 
+.bucketcontents td {
+    border: 0px;
+    border-collapse: separate;
+    text-align: center;
+    border-radius: 20px; 
+}
+
+
+.bucketcontents td {
+    padding: 10px;
+}
+
+.bucketcontents tr:nth-child(even) {
+    background-color: beige;
+}
+
+.bucketcontents tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+
+.bucketcontents tr:hover {
+    background-color: orange;
+    transform: scale(1.03); 
+}
+
+.bucketcontents tr {
+    transition: 0.35s linear;
+}
+
+.bucketcontents tr.tr-blank {
+    background-color: white;
+}
+
+.bucketcontents img {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.bucketcontents img.img-shadow {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.bucketcontents span.hashtag {
+    color: gray;
+}
+
+.bucketcontents h2 {
+    text-shadow: 2px 2px 5px gray; 
+}
+
+.text1 table{
+    border: 0px;
+    margin: 0 auto; /* 테이블을 가운데로 배치 */
+}
