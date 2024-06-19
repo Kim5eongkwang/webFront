@@ -1,6 +1,24 @@
 body {
     font-family: Arial, sans-serif;
+    /*
+    background-image: url(../image/picture/profile.png);
+    background-repeat: no-repeat;
+    background-size: 200px 250px;
+    background-position: right bottom;
+    background-attachment: fixed;
+    */
 }
+.profile {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000; /* 다른 요소들 위에 표시되도록 설정 */
+}
+
+.profile img {
+    width: 250px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
