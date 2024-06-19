@@ -96,3 +96,11 @@ h2 {
   text-align: justify;
 }
 
+.text2 .container {
+  display: flex;
+  align-items: center;
+}
+.text2 .container img {
+  margin-right: 20px; 
+  margin-left: 20px;
+}
