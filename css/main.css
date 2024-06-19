@@ -119,7 +119,7 @@ h3{
 }
 
 .imgbackground {
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../image/img_parallax.jpg);;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.13)), url(../image/picture/back7.jpg);
     background-size: cover;
     padding-left: 40px;
     height: 100vh;
