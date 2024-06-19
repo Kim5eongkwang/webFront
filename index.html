@@ -4,53 +4,59 @@
         <meta charset="utf-8">
         <meta name="impot" content="width=device-width, initial-scale-1.0">
         <title>성광 홈페이지</title>
-        <style>
-            #content{
-                position: absolute;
-                left: 5%;
-                top: 10px;
-                background-color: rgba(250, 235, 215, 0.5) ;
-                padding: 30px 50px;
-                border-radius: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="a.css"> 
-        <link rel="stylesheet" href="vegas/vegas.css">
+        <link rel="stylesheet" href="./vegas/vegas.css">
+        <link rel="stylesheet" href="./css/main.css">
         <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js" crossorigin="anonymous"></script>
-        
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/Fabicon_package/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/Fabicon_package/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <div id="content">
-            <h1>5ungkwang's Landing Page</h1>
-            <p>VEGAS2를 이용한 풀스크린 랜딩페이지</p>
-            <a href="./resume.html"><i class="fa-solid fa-clipboard-user"></i> RESUME</a> /
-            <a href="./story.html"><i class="fa-solid fa-book"></i> Story</a> /
-            <a href="./album.html"><i class="fa-solid fa-image"></i> ALBUM</a> /
-            <a href="./major.html"><i class="fa-solid fa-computer"></i> Major</a> /
-            <a href="./poster.html"><i class="fa-solid fa-broom-ball"></i> POSTER</a> /
-            <a href="./buckit.html"><i class="fa-solid fa-list-check"></i> buckit List</a> /
-            <a href="http://www.jbnu.ac.kr" target="_blank">JBNU</a>
-            <ul>
-                <li>Home : 메인 페이지입니다.</li>
-                <li>RESUME : 나의 이력서를 보실 수 있습니다.</li>
-                <li>STORY : 삼행시부터 숫자 키워드를 통한 나의 소개, 취미 그리고 롤모델까지~</li>
-                <li>ALBUM : 일상생활에서의 나의모습은 이렇습니다.</li>
-                <li>POSTER : 이미지맵으로 표현한 나의 홈페이지</li>
-                <li>BUCKIT LIST : 죽기전에 꼭 하고싶은 10가지</li>
-                <li>JBNU : 학교 사이트로 이동합니다.</li>
-            </ul>
-        </div>
+        <nav class="light-gray text-gray sidebar center">
+            <br>
+            <div>
+                <image class="circular" src="./image/logo.png" alt="Profile" width="200px"></image>
+            </div>
+            <h3 class="margin-0" style="padding-top: 20px ; color:black">
+                <b>
+                    Kim. Seoungkwang
+                </b>
+            </h3>
+            <p class="caps margin-0" style="padding-bottom: 20px">
+                student of Jeonbuk National University
+            </p>
+                <a href="main.html" class="bar-block button caps">Main</a>
+                <a href="resume.html" class="bar-block button caps">Resume</a>
+                <a href="story.html" class="bar-block button caps">Story</a>
+                <a href="major.html" class="bar-block button caps">Major</a>
+                <a href="album.html" class="bar-block button caps">Album</a>
+                <a href="bucket.html" class="bar-block button caps">Bucket</a>
+                <a href="Poster.html" class="bar-block button caps">Poster</a>
+                <a href="https://www.jbnu.ac.kr/kor/" target="_blank" class="bar-block button caps">JBNU</a>
+                <br>
+                <br>
+        </nav>
 
         <script>
             $(function() {
                 $('body').vegas({
                     slides: [
-                        { src: './image/buckit/buckit1.jpg' },
-                        { src: './image/buckit/buckit2.jpg' },
-                        { src: './image/buckit/buckit3.jpg' },
-                        { src: './image/buckit/buckit4.jpg' }
+                        { src: './image/picture/back2.jpg' },
+                        { src: './image/picture/back3.jpg' },
+                        { src: './image/picture/back5.jpg' },
+                        { src: './image/picture/back6.jpg' },
+                        { src: './image/picture/back7.jpg' },
+                        { src: './image/picture/back8.jpg' },
+                        { src: './image/picture/back9.jpg' },
+                        { src: './image/picture/back10.jpg' },
+                        { src: './image/picture/back11.jpg' },
+                        { src: './image/picture/back12.jpg' },
                     ],
                     delay: 8500,
                     transition: 'zoomOut',
