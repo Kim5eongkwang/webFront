@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>나의 앨범창</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/image/Fabicon_package/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/Fabicon_package/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/Fabicon_package/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
-        <style>
-            div {
-                width: 300px;
-                display:inline-block;
-                border: 1px solid gray;
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/album.css">
+</head>
+<body>
+    <header id="header">
+      <img class="logo" src="../image/logo.png">
 
-            div.card {
-                padding: 10px 10px 20px 20px;      /* 여백 */
-                text-align: left;   /* 글자 좌측정렬 */
-                border-radius: 10px;    /* 박스 모서리 둥글게 */
-                margin: 20px;       /* 여백 */
-                background-color: beige; /* 배경색상 */
-            }
+        <nav id="nav">
+          <a href="main.html">Main</a>
+          <a href="resume.html">Resume</a>
+          <a href="story.html">Story</a>
+          <a href="major.html" >Major</a>
+          <a href="album.html" class="active">Album</a>
+          <a href="bucket.html">Bucket</a>
+          <a href="#">JBNU</a>
+        </nav>
+    </header>
+    
 
-            div>a>img {
-                width: 100%;
-                height: 250px;
-                border-radius: 20px;
-            }
 
-            h3 {
-                text-shadow: 2px 2px 10px orange;
-            }
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">My Album</span>
+    </div>
+</div>
 
-        </style>
-        <link rel="stylesheet" href="./a.css">
-        <script src="https://kit.fontawesome.com/a60f9782f4.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body align="center">
-        <a href="./main.html"> HOME</a> /
-        <a href="./resume.html"><i class="fa-solid fa-clipboard-user"></i> RESUME</a> /
-        <a href="./story.html"><i class="fa-solid fa-book"></i> Story</a> /
-        <a href="./album.html"><i class="fa-solid fa-image"></i> ALBUM</a> / 
-        <a href="./major.html"><i class="fa-solid fa-computer"></i> Major</a> / 
-        <a href="./poster.html"><i class="fa-solid fa-broom-ball"></i> POSTER</a>  /
-        <a href="./buckit.html"><i class="fa-solid fa-list-check"></i> buckit List</a> / 
-        <a href="http://ww.jbnu.ac.kr" target="_blank">JBNU</a> <!-- target-"_blank"는 새로운 탭으로 사이트를 열때 필요함-->
-
-        <h1>나의 보물 1호, 사진첩</h1>
+<div class="text1">
+    <h1>나의 보물 1호, 사진첩</h1>
         <div class="card">
             <a href="./image/picture/pic1.jpg" target="_blank"><img src="./image/picture/pic1.jpg" alt="첫번재 사진"></a>
             <h3>첫번째</h3>
@@ -180,36 +170,71 @@
             </p>
         </div>
         <div class="card">
-            <a href="./image/picture/pic16.jpg" target="_blank"><img src="./image/picture/pic16.jpg" alt="열일곱번재 사진"></a>
+            <a href="./image/picture/pic17.jpg" target="_blank"><img src="./image/picture/pic17.jpg" alt="열일곱번재 사진"></a>
             <h3>열일곱번째</h3>
             <p>
-                대구에서 열린 보안 경진대회. <br>
-                전북대학교 정예 멤버들과 함께.
+                새해 첫 일출 <br>
+                고향 친구들과 함께 산을 오르다.
             </p>
         </div>
         <div class="card">
-            <a href="./image/picture/pic16.jpg" target="_blank"><img src="./image/picture/pic16.jpg" alt="열여덟번재 사진"></a>
+            <a href="./image/picture/pic18.jpg" target="_blank"><img src="./image/picture/pic18.jpg" alt="열여덟번재 사진"></a>
             <h3>열여덟번째</h3>
             <p>
-                대구에서 열린 보안 경진대회. <br>
-                전북대학교 정예 멤버들과 함께.
+                사이버 경진대회 참가 <br>
+                대회 직전 셀카 한장
             </p>
         </div>
         <div class="card">
-            <a href="./image/picture/pic16.jpg" target="_blank"><img src="./image/picture/pic16.jpg" alt="열아홉번재 사진"></a>
+            <a href="./image/picture/pic19.jpg" target="_blank"><img src="./image/picture/pic19.jpg" alt="열아홉번재 사진"></a>
             <h3>열아홉번째</h3>
             <p>
-                대구에서 열린 보안 경진대회. <br>
-                전북대학교 정예 멤버들과 함께.
+                땀이 나는 무더위 <br>
+                차에서 잠깐 내려 셀카 한장
             </p>
         </div>
         <div class="card">
-            <a href="./image/picture/pic16.jpg" target="_blank"><img src="./image/picture/pic16.jpg" alt="스무번재 사진"></a>
+            <a href="./image/picture/pic20.jpg" target="_blank"><img src="./image/picture/pic20.jpg" alt="스무번재 사진"></a>
             <h3>스무번째</h3>
             <p>
-                대구에서 열린 보안 경진대회. <br>
-                전북대학교 정예 멤버들과 함께.
+                국방의 의무를 수행할 친구. <br>
+                이발병 경력을 살려 머리를 잘라주다.
             </p>
         </div>
-    </body>
+</div>
+
+<footer>
+    <div class="main">
+        <div class="part1">
+        <img src="../image/logo.png"/>
+        </div>
+        <div class="part2">
+        <p>
+            "My name is Sungkwang Kim, and I have a keen interest in software engineering. With a passion for technology and innovation, I am always eager to explore new programming challenges. I aspire to develop solutions that can make a significant impact in the tech world."
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-vk"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="last">
+        <p class="last1">
+        Copyright 2024 Kim Seoungkwang - Web Programming Course 
+        <br/>
+        Jeonbuk National University
+        </p>
+        <p class="last2">All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="../js/navbar.js"></script>
+
+</body>
+</html>
+</body>
 </html>
